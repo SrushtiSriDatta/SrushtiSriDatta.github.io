@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srushti SriDatta — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Srushti<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Srushti SriDatta</h1>
+      <h2 class="hero-title">Electronics & Communication Engineer</h2>
+      <p class="hero-tagline">Bridging <span>Hardware</span> and <span>Software</span> — from circuits to code.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://github.com/SrushtiSriDatta/SrushtiSriDatta/raw/main/Srushti_SriDatta_Resume.pdf" class="btn btn-outline" target="_blank">Download Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:srushtisridatta26@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SrushtiSriDatta" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/srushti-sri-datta" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-circle">
+        <div class="hero-initials">SS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a <strong>BE in ECE (Honours)</strong> graduate from GSSS Institute of Engineering and Technology for Women, VTU — with a CGPA of <strong>8.63/10</strong>.</p>
+        <p>I'm passionate about both <strong>Hardware</strong> (embedded systems, IoT, sensors) and <strong>Software</strong> (full-stack web development). I love building things that solve real problems.</p>
+        <p>My major project — a <strong>Smart Energy Meter with Tamper Detection</strong> — was accepted at <strong>EMIC 2026</strong> for publication in IEEE Xplore. I also completed a full-stack internship at <strong>VrishankSoft Pvt. Ltd.</strong> where I built the WriteHub blog platform.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Education</h3>
+          <p>BE ECE (Honours)<br/>GSSSIETW, VTU<br/>CGPA: 8.63/10</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Internship</h3>
+          <p>Full Stack Dev Intern<br/>VrishankSoft Pvt. Ltd.<br/>Feb–May 2026</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-trophy"></i>
+          <h3>Achievements</h3>
+          <p>Altium Global Scholar<br/>WinTechCon 2025<br/>EMIC 2026 Paper</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>Mysuru<br/>Karnataka, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <h2 class="section-title">Tech <span>Stack</span></h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+        <div class="skill-tags">
+          <span>C</span><span>C++</span><span>Java</span><span>Python</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+        <div class="skill-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>EJS</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-microchip"></i> Hardware & EDA Tools</h3>
+        <div class="skill-tags">
+          <span>ESP32</span><span>Arduino</span><span>Vivado</span>
+          <span>Multisim</span><span>Cadence</span><span>IoT</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3><i class="fas fa-tools"></i> Dev Tools</h3>
+        <div class="skill-tags">
+          <span>Git</span><span>GitHub</span><span>ThingSpeak</span><span>AWS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-badge">Featured</div>
+        <div class="project-icon"><i class="fas fa-pen-nib"></i></div>
+        <h3>WriteHub</h3>
+        <p class="project-sub">Full Stack Blog Platform</p>
+        <p class="project-desc">A production-ready blog platform built during internship at VrishankSoft. Features admin dashboard, category filters, search, comments, and secure authentication.</p>
+        <div class="project-tags">
+          <span>Node.js</span><span>Express</span><span>MongoDB</span><span>EJS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/SrushtiSriDatta/WriteHub" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card featured">
+        <div class="project-badge">IEEE Paper</div>
+        <div class="project-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Smart Energy Meter</h3>
+        <p class="project-sub">IoT — Major Project (2025–2026)</p>
+        <p class="project-desc">IoT-based intelligent energy meter with real-time monitoring, theft & tamper detection, GSM alerts, relay protection, and ThingSpeak cloud dashboard.</p>
+        <div class="project-tags">
+          <span>ESP32</span><span>Arduino</span><span>GSM</span><span>ThingSpeak</span><span>IoT</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/SrushtiSriDatta/Smart-Engery-Meter" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-wifi"></i></div>
+        <h3>WiFi Secure Communication</h3>
+        <p class="project-sub">Using RSA Cryptography (2024)</p>
+        <p class="project-desc">Built a secure WiFi communication system using RSA public-key cryptography with encryption, authentication, and data integrity for wireless transmission.</p>
+        <div class="project-tags">
+          <span>ESP32</span><span>C++</span><span>RSA</span><span>WiFi</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon"><i class="fas fa-traffic-light"></i></div>
+        <h3>Traffic Control System</h3>
+        <p class="project-sub">Embedded System (2023)</p>
+        <p class="project-desc">Simulated an 8052 microcontroller-based traffic light control system using Multisim with assembly language logic to automate signals.</p>
+        <div class="project-tags">
+          <span>8052</span><span>Multisim</span><span>Assembly</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section section-alt" id="certifications">
+    <h2 class="section-title">Certifications & <span>Achievements</span></h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <i class="fab fa-aws"></i>
+        <h3>AWS Academy Cloud Foundations</h3>
+        <p>Amazon Web Services</p>
+      </div>
+      <div class="cert-card">
+        <i class="fab fa-aws"></i>
+        <h3>AWS Academy Machine Learning Foundations</h3>
+        <p>Amazon Web Services</p>
+      </div>
+      <div class="cert-card">
+        <i class="fab fa-python"></i>
+        <h3>Python Essentials</h3>
+        <p>Cisco Networking Academy</p>
+      </div>
+      <div class="cert-card">
+        <i class="fas fa-certificate"></i>
+        <h3>Programming in Java</h3>
+        <p>NPTEL</p>
+      </div>
+      <div class="cert-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Women in Cybersecurity — BOOST 5.0</h3>
+        <p>Cisco · 45-Day Training</p>
+      </div>
+    </div>
+
+    <div class="achievements">
+      <h3>Achievements</h3>
+      <div class="achievement-list">
+        <div class="achievement-item">
+          <i class="fas fa-award"></i>
+          <p><strong>Altium Global Scholarship</strong> recipient (2025)</p>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-medal"></i>
+          <p><strong>Gita Chaitanya Merit Scholarship</strong> recipient</p>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-microphone"></i>
+          <p>Presented technical project at <strong>WinTechCon 2025</strong></p>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-file-alt"></i>
+          <p>Paper accepted at <strong>EMIC 2026</strong> — IEEE Xplore</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <p class="contact-sub">I'm currently open to opportunities in Embedded Systems, IoT, Full Stack Development, or VLSI. Feel free to reach out!</p>
+    <div class="contact-cards">
+      <a href="mailto:srushtisridatta26@gmail.com" class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>srushtisridatta26@gmail.com</p>
+      </a>
+      <a href="https://linkedin.com/in/srushti-sri-datta" target="_blank" class="contact-card">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p>srushti-sri-datta</p>
+      </a>
+      <a href="https://github.com/SrushtiSriDatta" target="_blank" class="contact-card">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+        <p>SrushtiSriDatta</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <strong>Srushti SriDatta</strong></p>
+    <p>Mysuru, Karnataka, India</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
