@@ -124,6 +124,7 @@ nav.scrolled {
 .project-desc { font-size: 0.92rem; line-height: 1.75; margin-bottom: 20px; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
 .project-tags span { background: #f0fdf4; color: var(--primary); padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 500; border: 1px solid #bbf7d0; }
+.project-links { display: flex; flex-wrap: wrap; gap: 12px; }
 .project-links a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--primary); font-weight: 600; font-size: 0.9rem; border: 2px solid var(--primary); padding: 8px 20px; border-radius: 50px; transition: all 0.3s; }
 .project-links a:hover { background: var(--primary); color: white; }
 
