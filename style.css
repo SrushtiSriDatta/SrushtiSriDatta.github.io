@@ -185,6 +185,11 @@ footer p { margin-bottom: 4px; font-size: 0.9rem; }
 
 /* Open to opportunities line in the hero */
 
-.project-video { display: block; width: 100%; border-radius: 14px; background: #0d0f12; margin: -4px 0 20px; border: 1px solid var(--border); }
-.project-video.tall { aspect-ratio: 9 / 16; max-height: 460px; object-fit: contain; }
-.project-video.wide { aspect-ratio: 16 / 9; object-fit: cover; }
+.demos-grid { display: grid; grid-template-columns: minmax(260px, 340px) minmax(0, 760px); gap: 36px; justify-content: center; align-items: start; }
+.demo-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 20px 20px 24px; scroll-margin-top: 90px; }
+.demo-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--dark); margin: 16px 4px 4px; }
+.demo-card p { font-size: 0.92rem; margin: 0 4px; }
+.demo-video { display: block; width: 100%; border-radius: 14px; background: #0d0f12; }
+.demo-video.tall { aspect-ratio: 9 / 16; }
+.demo-video.wide { aspect-ratio: 16 / 9; }
+@media (max-width: 900px) { .demos-grid { grid-template-columns: minmax(0, 1fr); max-width: 520px; margin: 0 auto; } .demo-video.tall { max-height: 640px; object-fit: contain; } }
